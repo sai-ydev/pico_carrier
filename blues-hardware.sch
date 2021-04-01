@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -95,7 +95,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="yes"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="PM_Ref" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
+<layer number="119" name="PF_Ref" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="WFL_Ref" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -620,14 +623,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="21" x="-4.25" y="4.075" dx="1.55" dy="0.3" layer="1" rot="R90"/>
 <smd name="22" x="-4" y="-3.475" dx="1.55" dy="0.3" layer="1" rot="R90"/>
 <smd name="23" x="-3.75" y="4.075" dx="1.55" dy="0.3" layer="1" rot="R90"/>
-<smd name="24" x="-3.5" y="-3.475" dx="1.55" dy="0.3" layer="1" rot="R90"/>
-<smd name="25" x="-3.25" y="4.075" dx="1.55" dy="0.3" layer="1" rot="R90"/>
-<smd name="26" x="-3" y="-3.475" dx="1.55" dy="0.3" layer="1" rot="R90"/>
-<smd name="27" x="-2.75" y="4.075" dx="1.55" dy="0.3" layer="1" rot="R90"/>
-<smd name="28" x="-2.5" y="-3.475" dx="1.55" dy="0.3" layer="1" rot="R90"/>
-<smd name="29" x="-2.25" y="4.075" dx="1.55" dy="0.3" layer="1" rot="R90"/>
-<smd name="30" x="-2" y="-3.475" dx="1.55" dy="0.3" layer="1" rot="R90"/>
-<smd name="31" x="-1.75" y="4.075" dx="1.55" dy="0.3" layer="1" rot="R90"/>
 <smd name="32" x="-1.5" y="-3.475" dx="1.55" dy="0.3" layer="1" rot="R90"/>
 <smd name="33" x="-1.25" y="4.075" dx="1.55" dy="0.3" layer="1" rot="R90"/>
 <smd name="34" x="-1" y="-3.475" dx="1.55" dy="0.3" layer="1" rot="R90"/>
@@ -682,29 +677,49 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="11" y1="-4.5" x2="11" y2="4.5" width="0.2" layer="51"/>
 <wire x1="11" y1="4.5" x2="-11" y2="4.5" width="0.2" layer="51"/>
 <wire x1="-11" y1="4.5" x2="-11" y2="-4.5" width="0.2" layer="51"/>
-<wire x1="-11" y1="1.25" x2="-11" y2="1.25" width="0.1" layer="21"/>
 <wire x1="-11" y1="1.25" x2="-11" y2="-4.5" width="0.1" layer="21"/>
-<wire x1="-11" y1="-4.5" x2="-11" y2="-4.5" width="0.1" layer="21"/>
 <wire x1="-11" y1="-4.5" x2="-11" y2="1.25" width="0.1" layer="21"/>
 <wire x1="-11" y1="-4.5" x2="11" y2="-4.5" width="0.1" layer="21"/>
-<wire x1="11" y1="-4.5" x2="11" y2="-4.5" width="0.1" layer="21"/>
 <wire x1="11" y1="-4.5" x2="-11" y2="-4.5" width="0.1" layer="21"/>
-<wire x1="-11" y1="-4.5" x2="-11" y2="-4.5" width="0.1" layer="21"/>
-<wire x1="11" y1="-4.5" x2="11" y2="-4.5" width="0.1" layer="21"/>
 <wire x1="11" y1="-4.5" x2="11" y2="1.25" width="0.1" layer="21"/>
-<wire x1="11" y1="1.25" x2="11" y2="1.25" width="0.1" layer="21"/>
 <wire x1="11" y1="1.25" x2="11" y2="-4.5" width="0.1" layer="21"/>
 <wire x1="-12" y1="6.65" x2="12" y2="6.65" width="0.1" layer="51"/>
 <wire x1="12" y1="6.65" x2="12" y2="-5.5" width="0.1" layer="51"/>
 <wire x1="12" y1="-5.5" x2="-12" y2="-5.5" width="0.1" layer="51"/>
 <wire x1="-12" y1="-5.5" x2="-12" y2="6.65" width="0.1" layer="51"/>
-<wire x1="-9.4" y1="5.6" x2="-9.4" y2="5.6" width="0.2" layer="21"/>
 <wire x1="-9.4" y1="5.6" x2="-9.3" y2="5.6" width="0.2" layer="21" curve="180"/>
-<wire x1="-9.3" y1="5.6" x2="-9.3" y2="5.6" width="0.2" layer="21"/>
 <wire x1="-9.3" y1="5.6" x2="-9.4" y2="5.6" width="0.2" layer="21" curve="180"/>
-<wire x1="-9.4" y1="5.6" x2="-9.4" y2="5.6" width="0.2" layer="21"/>
 <wire x1="-9.4" y1="5.6" x2="-9.3" y2="5.6" width="0.2" layer="21" curve="180"/>
 <pad name="P$1" x="0.05" y="-34" drill="3.7" diameter="6"/>
+<polygon width="0.127" layer="31">
+<vertex x="5.08" y="-38.1"/>
+<vertex x="0" y="-38.1"/>
+<vertex x="-3.81" y="-38.1"/>
+</polygon>
+<polygon width="0.1" layer="31">
+<vertex x="-1.773" y="-33.636" curve="-74.087907"/>
+<vertex x="-0.273" y="-32.136"/>
+<vertex x="-0.273" y="-31.036" curve="76.512269"/>
+<vertex x="-2.873" y="-33.636"/>
+</polygon>
+<polygon width="0.1" layer="31">
+<vertex x="-0.273" y="-35.809" curve="-74.087907"/>
+<vertex x="-1.773" y="-34.309"/>
+<vertex x="-2.873" y="-34.436" curve="76.512269"/>
+<vertex x="-0.273" y="-37.036"/>
+</polygon>
+<polygon width="0.1" layer="31">
+<vertex x="0.4" y="-32.136" curve="-74.087907"/>
+<vertex x="1.9" y="-33.636"/>
+<vertex x="3" y="-33.636" curve="76.512269"/>
+<vertex x="0.4" y="-31.036"/>
+</polygon>
+<polygon width="0.1" layer="31">
+<vertex x="1.9" y="-34.309" curve="-74.087907"/>
+<vertex x="0.4" y="-35.809"/>
+<vertex x="0.4" y="-37.036" curve="76.512269"/>
+<vertex x="3" y="-34.309"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -738,14 +753,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="NC@5" x="33.02" y="17.78" length="middle" rot="R270"/>
 <pin name="V_GPS_IN" x="33.02" y="-15.24" length="middle" rot="R90"/>
 <pin name="NC@6" x="35.56" y="17.78" length="middle" rot="R270"/>
-<pin name="KEY@8" x="35.56" y="-15.24" length="middle" rot="R90"/>
-<pin name="KEY@1" x="38.1" y="17.78" length="middle" rot="R270"/>
-<pin name="KEY@7" x="38.1" y="-15.24" length="middle" rot="R90"/>
-<pin name="KEY@2" x="40.64" y="17.78" length="middle" rot="R270"/>
-<pin name="KEY@6" x="40.64" y="-15.24" length="middle" rot="R90"/>
-<pin name="KEY@3" x="43.18" y="17.78" length="middle" rot="R270"/>
-<pin name="KEY@5" x="43.18" y="-15.24" length="middle" rot="R90"/>
-<pin name="KEY@4" x="45.72" y="17.78" length="middle" rot="R270"/>
 <pin name="NC@26" x="45.72" y="-15.24" length="middle" rot="R90"/>
 <pin name="GND@6" x="48.26" y="17.78" length="middle" rot="R270"/>
 <pin name="NC@25" x="48.26" y="-15.24" length="middle" rot="R90"/>
@@ -790,8 +797,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="GND@12" x="99.06" y="17.78" length="middle" rot="R270"/>
 <pin name="VM_P@1" x="99.06" y="-15.24" length="middle" rot="R90"/>
 <pin name="NC@20" x="101.6" y="17.78" length="middle" rot="R270"/>
-<pin name="GND@1" x="0" y="0" length="middle" direction="pwr"/>
-<pin name="GND@2" x="109.22" y="0" length="middle" rot="R180"/>
+<pin name="GND@1" x="43.18" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@2" x="40.64" y="-15.24" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -827,14 +834,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/MDT420E01001.
 <connect gate="G$1" pin="GND@7" pad="39"/>
 <connect gate="G$1" pin="GND@8" pad="45"/>
 <connect gate="G$1" pin="GND@9" pad="51"/>
-<connect gate="G$1" pin="KEY@1" pad="25"/>
-<connect gate="G$1" pin="KEY@2" pad="27"/>
-<connect gate="G$1" pin="KEY@3" pad="29"/>
-<connect gate="G$1" pin="KEY@4" pad="31"/>
-<connect gate="G$1" pin="KEY@5" pad="30"/>
-<connect gate="G$1" pin="KEY@6" pad="28"/>
-<connect gate="G$1" pin="KEY@7" pad="26"/>
-<connect gate="G$1" pin="KEY@8" pad="24"/>
 <connect gate="G$1" pin="NC@1" pad="1"/>
 <connect gate="G$1" pin="NC@10" pad="43"/>
 <connect gate="G$1" pin="NC@11" pad="47"/>
@@ -918,14 +917,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/MDT420E01001.
 <connect gate="G$1" pin="GND@7" pad="39"/>
 <connect gate="G$1" pin="GND@8" pad="45"/>
 <connect gate="G$1" pin="GND@9" pad="51"/>
-<connect gate="G$1" pin="KEY@1" pad="25"/>
-<connect gate="G$1" pin="KEY@2" pad="27"/>
-<connect gate="G$1" pin="KEY@3" pad="29"/>
-<connect gate="G$1" pin="KEY@4" pad="31"/>
-<connect gate="G$1" pin="KEY@5" pad="30"/>
-<connect gate="G$1" pin="KEY@6" pad="28"/>
-<connect gate="G$1" pin="KEY@7" pad="26"/>
-<connect gate="G$1" pin="KEY@8" pad="24"/>
 <connect gate="G$1" pin="NC@1" pad="1"/>
 <connect gate="G$1" pin="NC@10" pad="43"/>
 <connect gate="G$1" pin="NC@11" pad="47"/>
@@ -1212,6 +1203,351 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </deviceset>
 </devicesets>
 </library>
+<library name="holes" urn="urn:adsk.eagle:library:237">
+<description>&lt;b&gt;Mounting Holes and Pads&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="2,8" urn="urn:adsk.eagle:footprint:14239/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 2.8 mm with drill center</description>
+<wire x1="-1.778" y1="0" x2="0" y2="-1.778" width="2.286" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="1.778" x2="1.778" y2="0" width="2.286" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="0.635" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="2.921" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="2.54" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="1.5" width="0.2032" layer="21"/>
+<hole x="0" y="0" drill="2.8"/>
+</package>
+<package name="3,0" urn="urn:adsk.eagle:footprint:14240/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.0 mm with drill center</description>
+<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="1.6" width="0.2032" layer="21"/>
+<text x="-1.27" y="-3.81" size="1.27" layer="48">3,0</text>
+<hole x="0" y="0" drill="3"/>
+</package>
+<package name="3,3" urn="urn:adsk.eagle:footprint:14241/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.3 mm with drill center</description>
+<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="3.048" width="2.54" layer="39"/>
+<circle x="0" y="0" radius="3.048" width="2.54" layer="40"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="1.75" width="0.2032" layer="21"/>
+<hole x="0" y="0" drill="3.3"/>
+</package>
+<package name="3,6" urn="urn:adsk.eagle:footprint:14242/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.6 mm with drill center</description>
+<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="3.048" width="2.7686" layer="39"/>
+<circle x="0" y="0" radius="3.048" width="2.7686" layer="40"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="1.9" width="0.2032" layer="21"/>
+<hole x="0" y="0" drill="3.6"/>
+</package>
+<package name="4,1" urn="urn:adsk.eagle:footprint:14243/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 4.1 mm with drill center</description>
+<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="3.9116" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="0" width="3.9116" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="4.4958" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="39"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="40"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="41"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="42"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="43"/>
+<circle x="0" y="0" radius="2.15" width="0.1524" layer="21"/>
+<hole x="0" y="0" drill="4.1"/>
+</package>
+<package name="4,5" urn="urn:adsk.eagle:footprint:14244/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 4.5 mm with drill center</description>
+<wire x1="4.445" y1="0" x2="2.159" y2="0" width="0.0508" layer="21"/>
+<wire x1="0" y1="4.445" x2="0" y2="2.159" width="0.0508" layer="21"/>
+<wire x1="-2.159" y1="0" x2="-4.445" y2="0" width="0.0508" layer="21"/>
+<wire x1="0" y1="-2.159" x2="0" y2="-4.445" width="0.0508" layer="21"/>
+<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="3.9116" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="0" width="3.9116" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="4.4958" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="39"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="40"/>
+<circle x="0" y="0" radius="3.8184" width="2.54" layer="41"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="42"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="43"/>
+<circle x="0" y="0" radius="2.35" width="0.1524" layer="21"/>
+<text x="-1.27" y="-4.445" size="1.27" layer="48">4,5</text>
+<hole x="0" y="0" drill="4.5"/>
+</package>
+<package name="5,0" urn="urn:adsk.eagle:footprint:14245/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 5.0 mm with drill center</description>
+<wire x1="4.445" y1="0" x2="2.159" y2="0" width="0.0508" layer="21"/>
+<wire x1="0" y1="4.445" x2="0" y2="2.159" width="0.0508" layer="21"/>
+<wire x1="-2.159" y1="0" x2="-4.445" y2="0" width="0.0508" layer="21"/>
+<wire x1="0" y1="-2.159" x2="0" y2="-4.445" width="0.0508" layer="21"/>
+<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="3.9116" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="0" width="3.9116" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="4.4958" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="39"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="40"/>
+<circle x="0" y="0" radius="4.826" width="2.54" layer="43"/>
+<circle x="0" y="0" radius="4.826" width="2.54" layer="42"/>
+<circle x="0" y="0" radius="4.826" width="2.54" layer="41"/>
+<circle x="0" y="0" radius="2.6" width="0.1524" layer="21"/>
+<text x="-1.27" y="-4.445" size="1.27" layer="48">5,0</text>
+<hole x="0" y="0" drill="5"/>
+</package>
+<package name="3,2" urn="urn:adsk.eagle:footprint:14246/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.2 mm with drill center</description>
+<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="1.7" width="0.2032" layer="21"/>
+<hole x="0" y="0" drill="3.2"/>
+</package>
+<package name="4,3" urn="urn:adsk.eagle:footprint:14247/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 4.3 mm with drill center</description>
+<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="3.9116" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="0" width="3.9116" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="4.4958" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="39"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="40"/>
+<circle x="0" y="0" radius="3.8184" width="2.54" layer="41"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="42"/>
+<circle x="0" y="0" radius="3.81" width="2.54" layer="43"/>
+<circle x="0" y="0" radius="2.25" width="0.1524" layer="21"/>
+<hole x="0" y="0" drill="4.3"/>
+</package>
+<package name="5,5" urn="urn:adsk.eagle:footprint:14248/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 5.5 mm with drill center</description>
+<wire x1="4.445" y1="0" x2="2.159" y2="0" width="0.0508" layer="21"/>
+<wire x1="0" y1="4.445" x2="0" y2="2.159" width="0.0508" layer="21"/>
+<wire x1="-2.159" y1="0" x2="-4.445" y2="0" width="0.0508" layer="21"/>
+<wire x1="0" y1="-2.159" x2="0" y2="-4.445" width="0.0508" layer="21"/>
+<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="3.9116" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="0" width="3.9116" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="4.4958" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="39"/>
+<circle x="0" y="0" radius="4.699" width="4.5466" layer="40"/>
+<circle x="0" y="0" radius="4.826" width="2.54" layer="43"/>
+<circle x="0" y="0" radius="4.826" width="2.54" layer="42"/>
+<circle x="0" y="0" radius="4.826" width="2.54" layer="41"/>
+<circle x="0" y="0" radius="2.85" width="0.1524" layer="21"/>
+<hole x="0" y="0" drill="5.5"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="2,8" urn="urn:adsk.eagle:package:14271/1" type="box" library_version="2">
+<description>MOUNTING HOLE 2.8 mm with drill center</description>
+<packageinstances>
+<packageinstance name="2,8"/>
+</packageinstances>
+</package3d>
+<package3d name="3,0" urn="urn:adsk.eagle:package:14277/1" type="box" library_version="2">
+<description>MOUNTING HOLE 3.0 mm with drill center</description>
+<packageinstances>
+<packageinstance name="3,0"/>
+</packageinstances>
+</package3d>
+<package3d name="3,3" urn="urn:adsk.eagle:package:14278/1" type="box" library_version="2">
+<description>MOUNTING HOLE 3.3 mm with drill center</description>
+<packageinstances>
+<packageinstance name="3,3"/>
+</packageinstances>
+</package3d>
+<package3d name="3,6" urn="urn:adsk.eagle:package:14272/1" type="box" library_version="2">
+<description>MOUNTING HOLE 3.6 mm with drill center</description>
+<packageinstances>
+<packageinstance name="3,6"/>
+</packageinstances>
+</package3d>
+<package3d name="4,1" urn="urn:adsk.eagle:package:14273/1" type="box" library_version="2">
+<description>MOUNTING HOLE 4.1 mm with drill center</description>
+<packageinstances>
+<packageinstance name="4,1"/>
+</packageinstances>
+</package3d>
+<package3d name="4,5" urn="urn:adsk.eagle:package:14274/1" type="box" library_version="2">
+<description>MOUNTING HOLE 4.5 mm with drill center</description>
+<packageinstances>
+<packageinstance name="4,5"/>
+</packageinstances>
+</package3d>
+<package3d name="5,0" urn="urn:adsk.eagle:package:14276/1" type="box" library_version="2">
+<description>MOUNTING HOLE 5.0 mm with drill center</description>
+<packageinstances>
+<packageinstance name="5,0"/>
+</packageinstances>
+</package3d>
+<package3d name="3,2" urn="urn:adsk.eagle:package:14275/1" type="box" library_version="2">
+<description>MOUNTING HOLE 3.2 mm with drill center</description>
+<packageinstances>
+<packageinstance name="3,2"/>
+</packageinstances>
+</package3d>
+<package3d name="4,3" urn="urn:adsk.eagle:package:14289/1" type="box" library_version="2">
+<description>MOUNTING HOLE 4.3 mm with drill center</description>
+<packageinstances>
+<packageinstance name="4,3"/>
+</packageinstances>
+</package3d>
+<package3d name="5,5" urn="urn:adsk.eagle:package:14279/1" type="box" library_version="2">
+<description>MOUNTING HOLE 5.5 mm with drill center</description>
+<packageinstances>
+<packageinstance name="5,5"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="MOUNT-HOLE" urn="urn:adsk.eagle:symbol:14238/1" library_version="2">
+<wire x1="0" y1="1.27" x2="1.27" y2="0" width="1.524" layer="94" curve="-90" cap="flat"/>
+<wire x1="-1.27" y1="0" x2="0" y2="-1.27" width="1.524" layer="94" curve="90" cap="flat"/>
+<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.0508" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.0508" layer="94"/>
+<circle x="0" y="0" radius="2.032" width="0.0508" layer="94"/>
+<circle x="0" y="0" radius="0.508" width="0.0508" layer="94"/>
+<text x="2.032" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.032" y="-2.4638" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MOUNT-HOLE" urn="urn:adsk.eagle:component:14301/2" prefix="H" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; with drill center marker</description>
+<gates>
+<gate name="G$1" symbol="MOUNT-HOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="2.8" package="2,8">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14271/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="15" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="3.0" package="3,0">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14277/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="3.3" package="3,3">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14278/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="3.6" package="3,6">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14272/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="4.1" package="4,1">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14273/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="4.5" package="4,5">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14274/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="5.0" package="5,0">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14276/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="3.2" package="3,2">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14275/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="7" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="4.3" package="4,3">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14289/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="5.5" package="5,5">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14279/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1223,10 +1559,9 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="FRAME-A4L" device=""/>
-<part name="U$1" library="RaspberryPi_Pico" deviceset="RPI_PICO" device="-TH"/>
+<part name="U1" library="RaspberryPi_Pico" deviceset="RPI_PICO" device="-TH"/>
 <part name="J1" library="notecard" deviceset="MDT420E01001" device="NOTECARD"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:2652347" deviceset="QWIIC_CONNECTOR" device="JS-1MM" package3d_urn="urn:adsk.eagle:package:2652537/1"/>
@@ -1234,10 +1569,20 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
+<part name="H1" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.0" package3d_urn="urn:adsk.eagle:package:14277/1"/>
+<part name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.0" package3d_urn="urn:adsk.eagle:package:14277/1"/>
+<part name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.0" package3d_urn="urn:adsk.eagle:package:14277/1"/>
+<part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.0" package3d_urn="urn:adsk.eagle:package:14277/1"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<wire x1="116.84" y1="177.8" x2="116.84" y2="68.58" width="0.1524" layer="105" style="shortdash"/>
+<wire x1="116.84" y1="68.58" x2="0" y2="68.58" width="0.1524" layer="105" style="shortdash"/>
+<text x="22.86" y="154.94" size="6.4516" layer="105" font="vector" ratio="20">Raspberry Pi Pico</text>
+<text x="144.78" y="170.18" size="6.4516" layer="105" font="vector" ratio="20">Notecard</text>
+<text x="50.8" y="58.42" size="6.4516" layer="105" font="vector" ratio="20">Qwiic</text>
+<wire x1="116.84" y1="68.58" x2="116.84" y2="0" width="0.1524" layer="105" style="shortdash"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -1245,8 +1590,8 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <attribute name="LAST_DATE_TIME" x="181.61" y="6.35" size="2.286" layer="94" font="vector"/>
 <attribute name="SHEET" x="195.58" y="1.27" size="2.54" layer="94" font="vector"/>
 </instance>
-<instance part="U$1" gate="G$1" x="63.5" y="116.84" smashed="yes">
-<attribute name="NAME" x="63.5" y="147.32" size="2.54" layer="95" align="center"/>
+<instance part="U1" gate="G$1" x="63.5" y="116.84" smashed="yes">
+<attribute name="NAME" x="50.8" y="145.796" size="1.016" layer="95" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="63.5" y="152.4" size="2.54" layer="95" align="center"/>
 </instance>
 <instance part="J1" gate="G$1" x="172.72" y="45.72" smashed="yes" rot="R90">
@@ -1255,9 +1600,6 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </instance>
 <instance part="GND1" gate="1" x="63.5" y="76.2" smashed="yes">
 <attribute name="VALUE" x="60.96" y="73.66" size="1.778" layer="96"/>
-</instance>
-<instance part="GND2" gate="1" x="172.72" y="30.48" smashed="yes">
-<attribute name="VALUE" x="170.18" y="27.94" size="1.778" layer="96"/>
 </instance>
 <instance part="GND3" gate="1" x="142.24" y="33.02" smashed="yes">
 <attribute name="VALUE" x="139.7" y="30.48" size="1.778" layer="96"/>
@@ -1281,6 +1623,22 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <instance part="SUPPLY4" gate="G$1" x="208.28" y="86.36" smashed="yes">
 <attribute name="VALUE" x="208.28" y="89.154" size="1.016" layer="96" font="vector" ratio="20" align="bottom-center"/>
 </instance>
+<instance part="H1" gate="G$1" x="231.14" y="22.86" smashed="yes">
+<attribute name="NAME" x="233.172" y="23.4442" size="1.778" layer="95" display="off"/>
+<attribute name="VALUE" x="233.172" y="20.3962" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H2" gate="G$1" x="236.22" y="22.86" smashed="yes">
+<attribute name="NAME" x="238.252" y="23.4442" size="1.778" layer="95" display="off"/>
+<attribute name="VALUE" x="238.252" y="20.3962" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H3" gate="G$1" x="241.3" y="22.86" smashed="yes">
+<attribute name="NAME" x="243.332" y="23.4442" size="1.778" layer="95" display="off"/>
+<attribute name="VALUE" x="243.332" y="20.3962" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="H4" gate="G$1" x="246.38" y="22.86" smashed="yes">
+<attribute name="NAME" x="248.412" y="23.4442" size="1.778" layer="95" display="off"/>
+<attribute name="VALUE" x="248.412" y="20.3962" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1288,23 +1646,8 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <net name="GND" class="0">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="63.5" y1="78.74" x2="63.5" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="J1" gate="G$1" pin="GND@1"/>
-<wire x1="172.72" y1="33.02" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="GND@14"/>
-<wire x1="172.72" y1="38.1" x2="172.72" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="58.42" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="58.42" x2="200.66" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="38.1" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
-<junction x="172.72" y="38.1"/>
-<pinref part="J1" gate="G$1" pin="GND@13"/>
-<wire x1="187.96" y1="73.66" x2="200.66" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="73.66" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
-<junction x="200.66" y="58.42"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="GND@5"/>
@@ -1312,7 +1655,8 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <wire x1="154.94" y1="58.42" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="58.42" x2="142.24" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="GND@3"/>
-<wire x1="142.24" y1="55.88" x2="142.24" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="55.88" x2="142.24" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="43.18" x2="142.24" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="55.88" x2="142.24" y2="55.88" width="0.1524" layer="91"/>
 <junction x="142.24" y="55.88"/>
 <pinref part="J1" gate="G$1" pin="GND"/>
@@ -1347,11 +1691,23 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <wire x1="142.24" y1="142.24" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="142.24" x2="142.24" y2="142.24" width="0.1524" layer="91"/>
 <junction x="142.24" y="142.24"/>
+<pinref part="J1" gate="G$1" pin="GND@14"/>
+<wire x1="187.96" y1="58.42" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="58.42" x2="200.66" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="GND@13"/>
+<wire x1="187.96" y1="73.66" x2="200.66" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="73.66" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
+<junction x="200.66" y="58.42"/>
+<wire x1="200.66" y1="43.18" x2="142.24" y2="43.18" width="0.1524" layer="91"/>
+<junction x="142.24" y="43.18"/>
+<pinref part="J1" gate="G$1" pin="GND@1"/>
+<wire x1="187.96" y1="88.9" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="88.9" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
+<junction x="200.66" y="73.66"/>
 <pinref part="J1" gate="G$1" pin="GND@2"/>
-<wire x1="172.72" y1="154.94" x2="172.72" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="165.1" x2="142.24" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="165.1" x2="142.24" y2="144.78" width="0.1524" layer="91"/>
-<junction x="142.24" y="144.78"/>
+<wire x1="200.66" y1="86.36" x2="200.66" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="86.36" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
+<junction x="200.66" y="86.36"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
@@ -1362,7 +1718,7 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </net>
 <net name="3.3V" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="3V3"/>
+<pinref part="U1" gate="G$1" pin="3V3"/>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
 <wire x1="83.82" y1="132.08" x2="99.06" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="132.08" x2="99.06" y2="157.48" width="0.1524" layer="91"/>
@@ -1400,7 +1756,7 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GP16"/>
+<pinref part="U1" gate="G$1" pin="GP16"/>
 <wire x1="83.82" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
 <label x="91.44" y="93.98" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
 </segment>
@@ -1417,7 +1773,7 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GP17"/>
+<pinref part="U1" gate="G$1" pin="GP17"/>
 <wire x1="83.82" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
 <label x="91.44" y="96.52" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
 </segment>
